@@ -1,0 +1,86 @@
+{% extends 'base.html'%}
+
+{% block content %}
+<style>
+    .bg-cover {
+        background-size: cover !important;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+    }
+    header {
+      background-color: #007acc;
+      color: #fff;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    main {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    section {
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-size: 20px;
+        color: #007acc;
+        margin-bottom: 10px;
+    }
+    main p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+    }
+    label {
+        font-weight: bold;
+    }
+    #answer {
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    .css-5rimss a {
+          color: rgb(255 255 255);
+      }
+</style>  
+<body>
+    <div style="background: url(https://www.utsc.utoronto.ca/hr/sites/utsc.utoronto.ca.hr/files/styles/3_1_full_width_banner/public/images/page/UofT7685_20140909_UTSCStudentsWalktoClass_9902-lpr.jpeg?h=9df75cb1&itok=bG9DYg6R); border-radius: 0; " class="jumbotron bg-cover text-white" >
+        <div class="container py-5 text-center">
+        <br>
+        <br><br>
+            <h1 class="display-4 font-weight-bold">profesearch</h1>
+            <p class="font-italic mb-0">Welcome to our website dedicated to providing information about computer engineering and computer science professors at the Universities of Canada.</p>
+            <p>
+            <a href="{real_url}pricing?unknown?" class="text-white" target = "_self" style="text-decoration: none;">
+                <u style="text-decoration: none;">pricing</u>
+            </a>
+            </p>
+            <a href="{real_url}loginpage" role="button" class="btn btn-primary px-5" >try free trial</a>
+        </div>
+    </div>
+    <main>
+        <section>
+          <h2>What Can We Do for You?</h2>
+          <p>Welcome to our website dedicated to providing information about computer engineering and computer science professors at the University of Toronto. Our site is powered by advanced AI technology, which means you can ask us any question related to these fields, and we'll strive to provide you with accurate and informative answers.</p>
+          <p>Whether you're a student looking for specific details about professors, their research, or their courses, contacts , or personal webpage we're here to help.</p>
+          <p>Our AI-powered system is designed to assist you with:</p>
+          <ul>
+              <li>Exploring the profiles of computer science professors</li>
+              <li>Discovering research areas and publications</li>
+              <li>Understanding course offerings and syllabi</li>
+              <li>Answering general questions related to computer engineering and computer science</li>
+          </ul>
+          <p>Just type your question and watch as our AI works its magic to provide you with the most relevant and up-to-date information available. We're your gateway to unlocking the vast world of computer science at the Universities of Canada.</p>
+          <p>So, go ahead, start exploring, and feel free to ask us anything!</p>
+          <div style="text-align: center;">
+          <a href="{real_url}loginpage" role="button" class="btn btn-primary px-5">try free trial</a>
+          </div>
+      </section>
+    </main>
+{% endblock content %}
